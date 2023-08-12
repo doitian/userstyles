@@ -1,0 +1,9 @@
+/* ==UserStyle==
+@name        blog.iany.me UserStyle
+@match       https://blog.iany.me/*
+@match       https://*.blog.iany.me/*
+==/UserStyle== */
+/* show edit button */
+#site-main .breadcrumbs .social-links #edit-button {
+  display: inline-block;
+}

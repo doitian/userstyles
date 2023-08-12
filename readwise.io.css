@@ -1,0 +1,35 @@
+/* ==UserStyle==
+@name        readwise.io UserStyle
+@match       https://readwise.io/*
+@match       https://*.readwise.io/*
+==/UserStyle== */
+@media all {
+  :root {
+    --iy-sans-font: "Greycliff CF", "LXGW WenKai", system-ui, "Noto Sans",
+      "Noto Sans CJK SC", sans-serif, "Symbols Nerd Font";
+    --iy-mono-font: "Cartograph CF", monospace, "LXGW WenKai",
+      "Noto Sans CJK SC", "Symbols Nerd Font";
+    --iy-serif-font: "Artifex CF", "FZQingKeBenYueSongS-R-GB", "LXGW WenKai",
+      "Noto Serif", "Noto Serif CJK SC", serif, "Symbols Nerd Font";
+    --iy-alt-font: "Artifex Hand CF", "LXGW WenKai", system-ui, Lato,
+      "Noto Sans CJK SC", sans-serif, "Symbols Nerd Font";
+  }
+
+  pre,
+  code {
+    font-family: var(--iy-mono-font);
+  }
+}
+
+.highlight-text {
+  line-height: 1.5;
+  font-family: var(--iy-sans-font);
+}
+
+h1.list-book-title {
+  font-family: var(--iy-serif-font);
+}
+
+h1.list-book-author.mb-1 {
+  font-family: var(--iy-alt-font);
+}

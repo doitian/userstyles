@@ -1,0 +1,41 @@
+/* ==UserStyle==
+@name        read.readwise.io UserStyle
+@match       https://read.readwise.io/*
+@match       https://*.read.readwise.io/*
+==/UserStyle== */
+@media all {
+  :root {
+    --iy-sans-font: "Greycliff CF", "LXGW WenKai", system-ui, "Noto Sans",
+      "Noto Sans CJK SC", sans-serif, "Symbols Nerd Font";
+    --iy-mono-font: "Cartograph CF", monospace, "LXGW WenKai",
+      "Noto Sans CJK SC", "Symbols Nerd Font";
+    --iy-serif-font: "Artifex CF", "FZQingKeBenYueSongS-R-GB", "LXGW WenKai",
+      "Noto Serif", "Noto Serif CJK SC", serif, "Symbols Nerd Font";
+    --iy-alt-font: "Artifex Hand CF", "LXGW WenKai", system-ui, Lato,
+      "Noto Sans CJK SC", sans-serif, "Symbols Nerd Font";
+  }
+
+  pre,
+  code {
+    font-family: var(--iy-mono-font);
+  }
+}
+
+pre {
+  white-space: pre-wrap;
+}
+
+pre a {
+  color:aquamarine;
+}
+
+:root {
+  --ui-font: var(--iy-alt-font);
+  --reading-font-title: var(--iy-serif-font);
+  --reading-font-body: 'Atkinson Hyperlegible', var(--iy-sans-font);
+}
+
+#document-header h1 {
+  font-family: var(--iy-serif-font);
+  font-weight: 800;
+}

@@ -1,0 +1,8 @@
+/* ==UserStyle==
+@name        localhost UserStyle
+@match       https://localhost/*
+@match       https://*.localhost/*
+==/UserStyle== */
+#site-main .breadcrumbs .social-links #edit-button {
+  display: inline-block;
+}

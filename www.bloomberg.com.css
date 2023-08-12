@@ -1,0 +1,35 @@
+/* ==UserStyle==
+@name        www.bloomberg.com UserStyle
+@match       https://www.bloomberg.com/*
+@match       https://*.www.bloomberg.com/*
+==/UserStyle== */
+.dvz-v0-ad {
+  display: none;
+}
+
+@media print {
+  a.section > h2 {
+    break-before: always;
+  }
+
+  section.wrapper {
+    display: block;
+  }
+  section.wrapper > .nav-item {
+    display: block;
+    border-width: 0;
+  }
+  section.wrapper > .nav-item > .nav-item-text {
+    display: block;
+    min-height: auto;
+  }
+
+  .social-wrapper,
+  .button-wrapper,
+  #bb-that,
+  #bb-nav,
+  main > .dvz-content,
+  main > footer {
+    display: none;
+  }
+}

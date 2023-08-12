@@ -1,0 +1,9 @@
+/* ==UserStyle==
+@name        idp.acm.org UserStyle
+@match       https://idp.acm.org/*
+@match       https://*.idp.acm.org/*
+==/UserStyle== */
+input[name="donotcache"],
+input[name="donotcache"] + span {
+    display: none;
+}

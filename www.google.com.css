@@ -1,0 +1,8 @@
+/* ==UserStyle==
+@name        www.google.com UserStyle
+@match       https://www.google.com/*
+@match       https://*.www.google.com/*
+==/UserStyle== */
+[aria-label="Ads"] {
+  display: none;
+}

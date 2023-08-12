@@ -1,0 +1,63 @@
+/* ==UserStyle==
+@name        theaisummer.com UserStyle
+@match       https://theaisummer.com/*
+@match       https://*.theaisummer.com/*
+==/UserStyle== */
+@media print {
+  /* disable flex */
+  .page,
+  .post-banner__content {
+    display: block;
+  }
+
+  header.header,
+  footer.footer,
+  .overlay,
+  .nav-drawer,
+  .announcement-header--no-sticky,
+  .affiliate-disclosure,
+  .blog-page__left-sidebar,
+  .blog-page__right-sidebar,
+  .dl-prod-book-inline-banner,
+  .gatsby-image-wrapper > [aria-hidden="true"] {
+    display: none;
+  }
+
+  .blog-page,
+  .post-banner {
+    display: block;
+    max-width: 50rem;
+    margin: 0 auto;
+  }
+
+  .post-banner__content__featured-image .gatsby-image-wrapper {
+    box-shadow: none;
+  }
+
+  pre {
+    white-space: pre-wrap;
+    background-color: inherit;
+    border: 1px solid #eee;
+  }
+  pre * {
+    color: #555;
+    height: auto;
+  }
+
+  .gatsby-resp-image-background-image {
+    display: none;
+  }
+  img {
+    position: static;
+    break-inside: avoid-page;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    break-inside: avoid-page;
+    break-after: avoid-page;
+  }
+}

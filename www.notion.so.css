@@ -1,0 +1,35 @@
+/* ==UserStyle==
+@name        www.notion.so UserStyle
+@match       https://www.notion.so/*
+@match       https://*.www.notion.so/*
+==/UserStyle== */
+@media all {
+  :root {
+    --iy-sans-font: "Greycliff CF", "LXGW WenKai", system-ui, "Noto Sans",
+      "Noto Sans CJK SC", sans-serif, "Symbols Nerd Font";
+    --iy-mono-font: "Cartograph CF", monospace, "LXGW WenKai",
+      "Noto Sans CJK SC", "Symbols Nerd Font";
+    --iy-serif-font: "Artifex CF", "FZQingKeBenYueSongS-R-GB", "LXGW WenKai",
+      "Noto Serif", "Noto Serif CJK SC", serif, "Symbols Nerd Font";
+    --iy-alt-font: "Artifex Hand CF", "LXGW WenKai", system-ui, Lato,
+      "Noto Sans CJK SC", sans-serif, "Symbols Nerd Font";
+  }
+
+  pre,
+  code {
+    font-family: var(--iy-mono-font);
+  }
+}
+
+body {
+  font-family: var(--iy-sans-font);
+}
+
+.notion-frame h1 {
+  font-family: var(--iy-serif-font);
+  font-weight: 700;
+}
+
+.notion-sidebar, .notion-topbar {
+  font-family: var(--iy-alt-font);
+}
