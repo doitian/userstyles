@@ -5,14 +5,15 @@
 ==/UserStyle== */
 @media all {
   :root {
-    --iy-sans-font: "Greycliff CF", "LXGW WenKai", system-ui, "Noto Sans",
-      "Noto Sans CJK SC", sans-serif, "Symbols Nerd Font";
-    --iy-mono-font: "Cartograph CF", monospace, "LXGW WenKai",
-      "Noto Sans CJK SC", "Symbols Nerd Font";
-    --iy-serif-font: "Artifex CF", "FZQingKeBenYueSongS-R-GB", "LXGW WenKai",
-      "Noto Serif", "Noto Serif CJK SC", serif, "Symbols Nerd Font";
-    --iy-alt-font: "Artifex Hand CF", "LXGW WenKai", system-ui, Lato,
-      "Noto Sans CJK SC", sans-serif, "Symbols Nerd Font";
+    --iy-sans-font: "Greycliff CF", "Poppins", "LXGW WenKai", system-ui,
+      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+      Arial, "Noto Sans", "Noto Sans CJK SC", sans-serif;
+    --iy-serif-font: "Artifex CF", "EB Garamond", "FZQingKeBenYueSongS-R-GB",
+      Georgia, Cambria, "Times New Roman", Times, "LXGW WenKai",
+      "Noto Serif CJK SC", serif;
+    --iy-mono-font: "Cartograph CF", "Cascadia Code", "LXGW WenKai",
+      SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono" "Courier New",
+      "Noto Sans CJK SC", monospace;
   }
 
   pre,
@@ -30,7 +31,6 @@ pre a {
 }
 
 :root {
-  --ui-font: var(--iy-alt-font);
   --reading-font-title: var(--iy-serif-font);
   --reading-font-body: 'Atkinson Hyperlegible', var(--iy-sans-font);
 }

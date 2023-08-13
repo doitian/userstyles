@@ -5,13 +5,12 @@
 ==/UserStyle== */
 @media all {
   :root {
-    --iy-sans-font: "Greycliff CF", -apple-system, BlinkMacSystemFont,
-      "Noto Sans", "LXGW WenKai", system-ui, sans-serif;
-    --iy-mono-font: "Cartograph CF", "Cascadia Code", "LXGW WenKai", monospace;
-    --iy-serif-font: "Artifex CF", "Noto Serif", "FZQingKeBenYueSongS-R-GB",
-      "LXGW WenKai", serif;
-    --iy-alt-font: "Artifex Hand CF", -apple-system, BlinkMacSystemFont, Lato,
-      "LXGW WenKai", system-ui, sans-serif;
+    --iy-serif-font: "Artifex CF", "EB Garamond", "FZQingKeBenYueSongS-R-GB",
+      Georgia, Cambria, "Times New Roman", Times, "LXGW WenKai",
+      "Noto Serif CJK SC", serif;
+    --iy-mono-font: "Cartograph CF", "Cascadia Code", "LXGW WenKai",
+      SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono" "Courier New",
+      "Noto Sans CJK SC", monospace;
   }
 
   pre,

@@ -5,7 +5,9 @@
 ==/UserStyle== */
 @media all {
   :root {
-    --iy-mono-font: "Cartograph CF", "Cascadia Code", "LXGW WenKai", monospace;
+    --iy-mono-font: "Cartograph CF", "Cascadia Code", "LXGW WenKai",
+      SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono" "Courier New",
+      "Noto Sans CJK SC", monospace;
   }
 
   pre,

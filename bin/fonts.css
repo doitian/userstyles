@@ -1,39 +1,16 @@
-/* ==UserStyle==
-@name        readwise.io
-@match       https://readwise.io/*
-@match       https://*.readwise.io/*
-==/UserStyle== */
 @media all {
   :root {
     --iy-sans-font: "Greycliff CF", "Poppins", "LXGW WenKai", system-ui,
       -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
       Arial, "Noto Sans", "Noto Sans CJK SC", sans-serif;
-    --iy-serif-font: "Artifex CF", "EB Garamond", "FZQingKeBenYueSongS-R-GB",
-      Georgia, Cambria, "Times New Roman", Times, "LXGW WenKai",
-      "Noto Serif CJK SC", serif;
     --iy-mono-font: "Cartograph CF", "Cascadia Code", "LXGW WenKai",
       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono" "Courier New",
       "Noto Sans CJK SC", monospace;
+    --iy-serif-font: "Artifex CF", "EB Garamond", "FZQingKeBenYueSongS-R-GB",
+      Georgia, Cambria, "Times New Roman", Times, "LXGW WenKai",
+      "Noto Serif CJK SC", serif;
     --iy-alt-font: "Artifex Hand CF", "Ysabeau", "LXGW WenKai", system-ui,
       -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
       Arial, "Noto Sans", "Noto Sans CJK SC", sans-serif;
   }
-
-  pre,
-  code {
-    font-family: var(--iy-mono-font);
-  }
-}
-
-.highlight-text {
-  line-height: 1.5;
-  font-family: var(--iy-sans-font);
-}
-
-h1.list-book-title {
-  font-family: var(--iy-serif-font);
-}
-
-h1.list-book-author.mb-1 {
-  font-family: var(--iy-alt-font);
 }
