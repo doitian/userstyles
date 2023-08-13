@@ -12,11 +12,11 @@
       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono" "Courier New",
       "Noto Sans CJK SC", monospace;
     --iy-deco-font: "Artifex Hand CF", "Lato", "LXGW WenKai", system-ui,
-      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
-      Arial, "Noto Sans", "Noto Sans CJK SC", sans-serif;
-    --iy-read-font: "Greycliff CF", "Poppins", "LXGW WenKai", system-ui,
-      -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue",
+      BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
       "Noto Sans", "Noto Sans CJK SC", sans-serif;
+    --iy-read-font: "Greycliff CF", "Poppins", "LXGW WenKai", system-ui,
+      BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "Noto Sans",
+      "Noto Sans CJK SC", sans-serif;
   }
 
   pre,

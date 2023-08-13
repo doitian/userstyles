@@ -6,9 +6,9 @@
 /* https://github.com/losuler/hacker-news-userstyle/blob/master/modern-hacker-news-light.user.css */
 @media all {
   :root {
-    --iy-sans-font: "Greycliff CF", "Poppins", system-ui, -apple-system,
-      BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "Noto Sans",
-      "Noto Sans CJK SC", "LXGW WenKai", sans-serif;
+    --iy-sans-font: "Greycliff CF", "Poppins", system-ui, BlinkMacSystemFont,
+      "Segoe UI", "Helvetica Neue", "Noto Sans", "Noto Sans CJK SC",
+      "LXGW WenKai", sans-serif;
     --iy-mono-font: "Cartograph CF", "Cascadia Code", "LXGW WenKai",
       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono" "Courier New",
       "Noto Sans CJK SC", monospace;
