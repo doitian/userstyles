@@ -33,15 +33,19 @@ get_used_fonts() {
   if has_used "$1" '--iy-mono-font'; then
     echo "$MONO_FONT"
   fi
-  if has_used "$1" '--iy-alt-font'; then
-    echo "$ALT_FONT"
+  if has_used "$1" '--iy-deco-font'; then
+    echo "$DECO_FONT"
+  fi
+  if has_used "$1" '--iy-read-font'; then
+    echo "$READ_FONT"
   fi
 }
 
 SANS_FONT="$(get_fonts '--iy-sans-font')"
 SERIF_FONT="$(get_fonts '--iy-serif-font')"
 MONO_FONT="$(get_fonts '--iy-mono-font')"
-ALT_FONT="$(get_fonts '--iy-alt-font')"
+DECO_FONT="$(get_fonts '--iy-deco-font')"
+READ_FONT="$(get_fonts '--iy-read-font')"
 
 for css in *.css; do
   TEMPLATE="$(remove_fonts "$css")"

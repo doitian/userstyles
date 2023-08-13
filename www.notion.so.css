@@ -5,18 +5,18 @@
 ==/UserStyle== */
 @media all {
   :root {
-    --iy-sans-font: "Greycliff CF", "Poppins", "LXGW WenKai", system-ui,
-      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
-      Arial, "Noto Sans", "Noto Sans CJK SC", sans-serif;
-    --iy-serif-font: "Artifex CF", "EB Garamond", "FZQingKeBenYueSongS-R-GB",
+    --iy-serif-font: "Artifex CF", "Roboto Slab", "FZQingKeBenYueSongS-R-GB",
       Georgia, Cambria, "Times New Roman", Times, "LXGW WenKai",
       "Noto Serif CJK SC", serif;
     --iy-mono-font: "Cartograph CF", "Cascadia Code", "LXGW WenKai",
       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono" "Courier New",
       "Noto Sans CJK SC", monospace;
-    --iy-alt-font: "Artifex Hand CF", "Ysabeau", "LXGW WenKai", system-ui,
+    --iy-deco-font: "Artifex Hand CF", "Lato", "LXGW WenKai", system-ui,
       -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
       Arial, "Noto Sans", "Noto Sans CJK SC", sans-serif;
+    --iy-read-font: "Greycliff CF", "Poppins", "LXGW WenKai", system-ui,
+      -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue",
+      "Noto Sans", "Noto Sans CJK SC", sans-serif;
   }
 
   pre,
@@ -26,7 +26,7 @@
 }
 
 body {
-  font-family: var(--iy-sans-font);
+  font-family: var(--iy-read-font);
 }
 
 .notion-frame h1 {
@@ -36,5 +36,5 @@ body {
 
 .notion-sidebar,
 .notion-topbar {
-  font-family: var(--iy-alt-font);
+  font-family: var(--iy-deco-font);
 }
