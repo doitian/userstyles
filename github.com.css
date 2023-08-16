@@ -28,3 +28,8 @@ tt,
 .blob-code-inner {
   font-family: var(--iy-mono-font);
 }
+
+.markdown-body code,
+.markdown-body tt {
+  padding: 0 0.4em;
+}
