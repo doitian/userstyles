@@ -8,9 +8,9 @@
   :root {
     --iy-sans-font: "Greycliff CF", "Poppins", system-ui, BlinkMacSystemFont,
       "Segoe UI", "Helvetica Neue", "Noto Sans", "Noto Sans CJK SC", sans-serif;
-    --iy-mono-font: "Cartograph CF", "Cascadia Code", "LXGW WenKai",
-      SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",
-      "Noto Sans CJK SC", monospace, "Symbols Nerd Font Mono";
+    --iy-mono-font: "Cartograph CF", "Cascadia Code", SFMono-Regular, Menlo,
+      Monaco, Consolas, "Liberation Mono", "Courier New", "Noto Sans CJK SC",
+      monospace, "Symbols Nerd Font Mono";
   }
 
   pre,

@@ -6,11 +6,10 @@
 @media all {
   :root {
     --iy-serif-font: "Artifex CF", "Roboto Slab", "FZQingKeBenYueSongS-R-GB",
-      Georgia, Cambria, "Times New Roman", Times, "LXGW WenKai",
-      "Noto Serif CJK SC", serif;
-    --iy-mono-font: "Cartograph CF", "Cascadia Code", "LXGW WenKai",
-      SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",
-      "Noto Sans CJK SC", monospace, "Symbols Nerd Font Mono";
+      Georgia, Cambria, "Times New Roman", Times, "Noto Serif CJK SC", serif;
+    --iy-mono-font: "Cartograph CF", "Cascadia Code", SFMono-Regular, Menlo,
+      Monaco, Consolas, "Liberation Mono", "Courier New", "Noto Sans CJK SC",
+      monospace, "Symbols Nerd Font Mono";
     --iy-read-font: "Greycliff CF", "Poppins", "LXGW WenKai", system-ui,
       BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "Noto Sans",
       "Noto Sans CJK SC", sans-serif;
