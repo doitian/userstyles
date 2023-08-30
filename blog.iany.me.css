@@ -5,5 +5,5 @@
 ==/UserStyle== */
 /* show edit button */
 #site-main .breadcrumbs .social-links #edit-button {
-  display: inline-block;
+  display: inline-block !important;
 }

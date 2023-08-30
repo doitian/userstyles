@@ -9,12 +9,12 @@ yield_files() {
   for css in *.css; do
     name="${css%.css}"
     modified="$(date -r "$css" +%s | jq -rR 'strptime("%s")|todateiso8601')"
-    jq --arg name "$name" --arg modified "$modified" -Rs '{($name):{
+    sed 's/ *!important;/;/' "$css" | jq --arg name "$name" --arg modified "$modified" -Rs '{($name):{
       "css": .,
       "enabled": true,
       "modifiedTime": $modified,
       "readability": false
-    }}' <"$css"
+    }}'
   done
 }
 
