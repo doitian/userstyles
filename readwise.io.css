@@ -5,16 +5,16 @@
 ==/UserStyle== */
 @media all {
   :root {
+    --iy-sans-font: "Greycliff CF", Inter, system-ui, BlinkMacSystemFont,
+      "Segoe UI", "Helvetica Neue", "Noto Sans", "Noto Sans CJK SC", sans-serif;
     --iy-serif-font: "Roboto Slab", Georgia, Cambria, "Times New Roman", Times,
       "Noto Serif CJK SC", serif;
     --iy-mono-font: "Cartograph CF", "Cascadia Code", SFMono-Regular, Menlo,
       Monaco, Consolas, "Liberation Mono", "Courier New", "Noto Sans CJK SC",
       monospace, "Symbols Nerd Font Mono";
-    --iy-deco-font: "Lato", "LXGW WenKai", system-ui, BlinkMacSystemFont,
-      "Segoe UI", "Helvetica Neue", "Noto Sans", "Noto Sans CJK SC", sans-serif;
-    --iy-read-font: "Atkinson Hyperlegible", "Greycliff CF", Inter,
-      "LXGW WenKai", system-ui, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue",
-      "Noto Sans", "Noto Sans CJK SC", sans-serif;
+    --iy-read-font: "Atkinson Hyperlegible", "Greycliff CF", Inter, system-ui,
+      BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "Noto Sans",
+      "LXGW WenKai", "Noto Sans CJK SC", sans-serif;
   }
 
   pre,
@@ -33,5 +33,5 @@ h1.list-book-title {
 }
 
 h1.list-book-author.mb-1 {
-  font-family: var(--iy-deco-font);
+  font-family: var(--iy-sans-font);
 }

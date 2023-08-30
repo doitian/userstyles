@@ -7,11 +7,11 @@
       monospace, "Symbols Nerd Font Mono";
     --iy-serif-font: "Roboto Slab", Georgia, Cambria, "Times New Roman", Times,
       "Noto Serif CJK SC", serif;
-    --iy-deco-font: "Lato", "LXGW WenKai", system-ui, BlinkMacSystemFont,
-      "Segoe UI", "Helvetica Neue", "Noto Sans", "Noto Sans CJK SC", sans-serif;
-    --iy-read-font: "Atkinson Hyperlegible", "Greycliff CF", Inter,
-      "LXGW WenKai", system-ui, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue",
-      "Noto Sans", "Noto Sans CJK SC", sans-serif;
+    --iy-ui-font: system-ui, BlinkMacSystemFont, "Lato", Inter, "Segoe UI",
+      "Helvetica Neue", "Noto Sans", "Noto Sans CJK SC", sans-serif;
+    --iy-read-font: "Atkinson Hyperlegible", "Greycliff CF", Inter, system-ui,
+      BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "Noto Sans",
+      "LXGW WenKai", "Noto Sans CJK SC", sans-serif;
   }
 }
 
