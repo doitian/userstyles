@@ -2,7 +2,7 @@
   :root {
     --iy-sans-font: "Greycliff CF", Inter, system-ui, BlinkMacSystemFont,
       "Segoe UI", "Helvetica Neue", "Noto Sans", "Noto Sans CJK SC", sans-serif;
-    --iy-mono-font: "Cartograph CF", "Cascadia Code", SFMono-Regular, Menlo,
+    --iy-mono-font: "Cascadia Code", "JetBrains Mono", SFMono-Regular, Menlo,
       Monaco, Consolas, "Liberation Mono", "Courier New", "Noto Sans CJK SC",
       monospace, "Symbols Nerd Font Mono";
     --iy-serif-font: "Roboto Slab", Georgia, Cambria, "Times New Roman", Times,
@@ -15,4 +15,4 @@
   }
 }
 
-/*Atkinson Hyperlegible,Cartograph CF,Cascadia Code,Greycliff CF,Inter,LXGW WenKai,Lato,Noto Sans CJK SC,Noto Serif CJK SC,Roboto Slab*/
+/*Atkinson Hyperlegible,Cartograph CF,Cascadia Code,Greycliff CF,Inter,JetBrains Mono,LXGW WenKai,Lato,Noto Sans CJK SC,Noto Serif CJK SC,Roboto Slab*/

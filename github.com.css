@@ -5,7 +5,7 @@
 ==/UserStyle== */
 @media all {
   :root {
-    --iy-mono-font: "Cartograph CF", "Cascadia Code", SFMono-Regular, Menlo,
+    --iy-mono-font: "Cascadia Code", "JetBrains Mono", SFMono-Regular, Menlo,
       Monaco, Consolas, "Liberation Mono", "Courier New", "Noto Sans CJK SC",
       monospace, "Symbols Nerd Font Mono";
   }
@@ -27,18 +27,4 @@ tt,
 .cm-content,
 .blob-code-inner {
   font-family: var(--iy-mono-font);
-}
-
-.markdown-body {
-  line-height: 1.6;
-}
-
-.markdown-body code,
-.markdown-body tt {
-  padding: 0 0.4em;
-}
-
-.markdown-body pre code,
-.markdown-body pre tt {
-  padding: 0;
 }
