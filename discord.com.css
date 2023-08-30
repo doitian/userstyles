@@ -11,8 +11,7 @@
       Monaco, Consolas, "Liberation Mono", "Courier New", "Noto Sans CJK SC",
       monospace, "Symbols Nerd Font Mono";
     --iy-deco-font: "Lato", "LXGW WenKai", system-ui, BlinkMacSystemFont,
-      "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
-      "Noto Sans CJK SC", sans-serif;
+      "Segoe UI", "Helvetica Neue", "Noto Sans", "Noto Sans CJK SC", sans-serif;
   }
 
   pre,
