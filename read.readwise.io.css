@@ -31,7 +31,7 @@ pre a {
 
 :root {
   --reading-font-title: var(--iy-serif-font);
-  --reading-font-body: "Atkinson Hyperlegible", var(--iy-read-font);
+  --reading-font-body: var(--reading-editable-font-family), var(--iy-read-font);
 }
 
 #document-header h1 {
