@@ -29,7 +29,16 @@ tt,
   font-family: var(--iy-mono-font);
 }
 
+.markdown-body {
+  line-height: 1.6;
+}
+
 .markdown-body code,
 .markdown-body tt {
   padding: 0 0.4em;
+}
+
+.markdown-body pre code,
+.markdown-body pre tt {
+  padding: 0;
 }
