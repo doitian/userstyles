@@ -1,7 +1,5 @@
 @media all {
   :root {
-    --iy-sans-font: "Greycliff CF", Inter, system-ui, BlinkMacSystemFont,
-      "Segoe UI", "Helvetica Neue", "Noto Sans", "Noto Sans CJK SC", sans-serif;
     --iy-mono-font: "Cascadia Code", "JetBrains Mono", SFMono-Regular, Menlo,
       Monaco, Consolas, "Liberation Mono", "Courier New", "Noto Sans CJK SC",
       monospace, "Symbols Nerd Font Mono";
@@ -9,7 +7,12 @@
       "Noto Serif CJK SC", serif;
     --iy-ui-font: system-ui, BlinkMacSystemFont, "Lato", Inter, "Segoe UI",
       "Helvetica Neue", "Noto Sans", "Noto Sans CJK SC", sans-serif;
-    --iy-read-font: "Atkinson Hyperlegible", "Greycliff CF", Inter, system-ui,
+    --iy-sans-font: "Greycliff CF", Inter, system-ui, BlinkMacSystemFont,
+      "Segoe UI", "Helvetica Neue", "Noto Sans", "Noto Sans CJK SC", sans-serif;
+    --iy-grey-font: "Greycliff CF", Inter, system-ui, BlinkMacSystemFont,
+      "Segoe UI", "Helvetica Neue", "Noto Sans", "LXGW WenKai",
+      "Noto Sans CJK SC", sans-serif;
+    --iy-atki-font: "Atkinson Hyperlegible", Inter, system-ui,
       BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "Noto Sans",
       "LXGW WenKai", "Noto Sans CJK SC", sans-serif;
   }

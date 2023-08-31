@@ -12,7 +12,7 @@
     --iy-mono-font: "Cascadia Code", "JetBrains Mono", SFMono-Regular, Menlo,
       Monaco, Consolas, "Liberation Mono", "Courier New", "Noto Sans CJK SC",
       monospace, "Symbols Nerd Font Mono";
-    --iy-read-font: "Atkinson Hyperlegible", "Greycliff CF", Inter, system-ui,
+    --iy-atki-font: "Atkinson Hyperlegible", Inter, system-ui,
       BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "Noto Sans",
       "LXGW WenKai", "Noto Sans CJK SC", sans-serif;
   }
@@ -25,7 +25,7 @@
 
 .highlight-text {
   line-height: 1.5;
-  font-family: var(--iy-read-font);
+  font-family: var(--iy-atki-font);
 }
 
 h1.list-book-title {

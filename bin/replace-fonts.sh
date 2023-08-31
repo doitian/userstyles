@@ -36,8 +36,11 @@ get_used_fonts() {
   if has_used "$1" '--iy-ui-font'; then
     echo "$UI_FONT"
   fi
-  if has_used "$1" '--iy-read-font'; then
-    echo "$READ_FONT"
+  if has_used "$1" '--iy-grey-font'; then
+    echo "$GREY_FONT"
+  fi
+  if has_used "$1" '--iy-atki-font'; then
+    echo "$ATKI_FONT"
   fi
 }
 
@@ -45,7 +48,8 @@ SANS_FONT="$(get_fonts '--iy-sans-font')"
 SERIF_FONT="$(get_fonts '--iy-serif-font')"
 MONO_FONT="$(get_fonts '--iy-mono-font')"
 UI_FONT="$(get_fonts '--iy-ui-font')"
-READ_FONT="$(get_fonts '--iy-read-font')"
+GREY_FONT="$(get_fonts '--iy-grey-font')"
+ATKI_FONT="$(get_fonts '--iy-atki-font')"
 
 for css in *.css; do
   TEMPLATE="$(remove_fonts "$css")"
