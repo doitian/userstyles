@@ -21,11 +21,15 @@
   }
 }
 
-body {
+.notion-page-content {
   font-family: var(--iy-atki-font);
 }
 
 .notion-frame h1 {
   font-family: var(--iy-serif-font);
   font-weight: 700;
+}
+
+.notion-code-block > div {
+  font-family: var(--iy-code-font);
 }
