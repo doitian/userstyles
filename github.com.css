@@ -5,20 +5,10 @@
 ==/UserStyle== */
 @media all {
   :root {
-    --iy-mono-font: "JetBrains Mono", SFMono-Regular, Menlo, Monaco, Consolas,
-      "Liberation Mono", "Courier New", "Noto Sans CJK SC", monospace,
-      "Symbols Nerd Font Mono";
     --iy-code-font: "Cartograph CF", SFMono-Regular, Menlo, Monaco, Consolas,
       "Liberation Mono", "Courier New", "Noto Sans CJK SC", monospace,
       "Symbols Nerd Font Mono";
   }
-}
-
-code,
-kbd,
-tt,
-.text-mono {
-  font-family: var(--iy-mono-font);
 }
 
 pre,
