@@ -6,8 +6,8 @@
 @media all {
   :root {
     --iy-code-font: "Cartograph CF", SFMono-Regular, Menlo, Monaco, Consolas,
-      "Liberation Mono", "Courier New", "Noto Sans CJK SC", monospace,
-      "Symbols Nerd Font Mono";
+      "Liberation Mono", "Courier New", "Noto Sans Mono CJK SC",
+      "Noto Sans CJK SC", monospace, "Symbols Nerd Font Mono";
   }
 
   pre,
