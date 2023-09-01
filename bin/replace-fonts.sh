@@ -42,11 +42,15 @@ get_used_fonts() {
   if has_used "$1" '--iy-atki-font'; then
     echo "$ATKI_FONT"
   fi
+  if has_used "$1" '--iy-code-font'; then
+    echo "$CODE_FONT"
+  fi
 }
 
 SANS_FONT="$(get_fonts '--iy-sans-font')"
 SERIF_FONT="$(get_fonts '--iy-serif-font')"
 MONO_FONT="$(get_fonts '--iy-mono-font')"
+CODE_FONT="$(get_fonts '--iy-code-font')"
 UI_FONT="$(get_fonts '--iy-ui-font')"
 GREY_FONT="$(get_fonts '--iy-grey-font')"
 ATKI_FONT="$(get_fonts '--iy-atki-font')"

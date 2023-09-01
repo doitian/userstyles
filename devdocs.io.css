@@ -5,9 +5,9 @@
 ==/UserStyle== */
 @media all {
   :root {
-    --iy-mono-font: "Cascadia Code", "JetBrains Mono", SFMono-Regular, Menlo,
-      Monaco, Consolas, "Liberation Mono", "Courier New", "Noto Sans CJK SC",
-      monospace, "Symbols Nerd Font Mono";
+    --iy-mono-font: "JetBrains Mono", SFMono-Regular, Menlo, Monaco, Consolas,
+      "Liberation Mono", "Courier New", "Noto Sans CJK SC", monospace,
+      "Symbols Nerd Font Mono";
   }
 
   pre,

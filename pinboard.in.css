@@ -7,9 +7,9 @@
   :root {
     --iy-serif-font: "Roboto Slab", Georgia, Cambria, "Times New Roman", Times,
       "Noto Serif CJK SC", serif;
-    --iy-mono-font: "Cascadia Code", "JetBrains Mono", SFMono-Regular, Menlo,
-      Monaco, Consolas, "Liberation Mono", "Courier New", "Noto Sans CJK SC",
-      monospace, "Symbols Nerd Font Mono";
+    --iy-mono-font: "JetBrains Mono", SFMono-Regular, Menlo, Monaco, Consolas,
+      "Liberation Mono", "Courier New", "Noto Sans CJK SC", monospace,
+      "Symbols Nerd Font Mono";
   }
 
   pre,
