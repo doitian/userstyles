@@ -13,6 +13,10 @@
   }
 }
 
+body {
+  font-size: 16px;
+}
+
 .private {
   background: #f0f0f0;
   border-color: #eee;
@@ -20,10 +24,17 @@
 
 .description {
   font-family: var(--iy-atki-font);
-  padding-left: 8px;
-  border-left: 2px solid #ccc;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0.5em 0 0 0.5em;
 }
 
 a.bookmark_title {
   font-family: var(--iy-ui-font);
+}
+
+@media (min-width: 640px) {
+  .star {
+    margin-left: -24px;
+  }
 }
