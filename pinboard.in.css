@@ -5,16 +5,11 @@
 ==/UserStyle== */
 @media all {
   :root {
-    --iy-serif-font: "Roboto Slab", Georgia, Cambria, "Times New Roman", Times,
-      "Noto Serif CJK SC", serif;
-    --iy-code-font: "Cartograph CF", SFMono-Regular, Menlo, Monaco, Consolas,
-      "Liberation Mono", "Courier New", "Noto Sans CJK SC", monospace,
-      "Symbols Nerd Font Mono";
-  }
-
-  pre,
-  code {
-    font-family: var(--iy-code-font);
+    --iy-ui-font: system-ui, BlinkMacSystemFont, "Lato", Inter, "Segoe UI",
+      "Helvetica Neue", "Noto Sans", "Noto Sans CJK SC", sans-serif;
+    --iy-atki-font: "Atkinson Hyperlegible", Inter, system-ui,
+      BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "Noto Sans",
+      "LXGW WenKai", "Noto Sans CJK SC", sans-serif;
   }
 }
 
@@ -24,15 +19,11 @@
 }
 
 .description {
+  font-family: var(--iy-atki-font);
   padding-left: 8px;
   border-left: 2px solid #ccc;
 }
 
 a.bookmark_title {
-  font-family: var(--iy-serif-font);
-}
-
-a.tag {
-  font-family: var(--iy-code-font);
-  font-style: italic;
+  font-family: var(--iy-ui-font);
 }
