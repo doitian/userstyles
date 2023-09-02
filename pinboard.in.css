@@ -31,6 +31,7 @@ body {
 
 a.bookmark_title {
   font-family: var(--iy-ui-font);
+  font-size: 17px;
 }
 
 @media (min-width: 640px) {
