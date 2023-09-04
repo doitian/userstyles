@@ -13,7 +13,12 @@ remove_fonts() {
 }
 
 insert_fonts() {
-  echo "$1" | sed '/^  :root {$/,$d'
+  echo "$1" | sed '/^@media all {$/,$d' | grep -v '@import.*fonts'
+  if has_used "$1" '--iy-atki-font'; then
+    echo "@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap');"
+  fi
+
+  echo '@media all {'
   echo '  :root {'
   echo "$2"
   echo "$1" | sed '1,/^  :root {$/d'

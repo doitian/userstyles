@@ -3,6 +3,7 @@
 @match       https://pinboard.in/*
 @match       https://*.pinboard.in/*
 ==/UserStyle== */
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap');
 @media all {
   :root {
     --iy-ui-font: system-ui, BlinkMacSystemFont, "Lato", Inter, "Segoe UI",

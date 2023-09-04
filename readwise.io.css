@@ -3,6 +3,7 @@
 @match       https://readwise.io/*
 @match       https://*.readwise.io/*
 ==/UserStyle== */
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap');
 @media all {
   :root {
     --iy-sans-font: "Greycliff CF", Inter, system-ui, BlinkMacSystemFont,

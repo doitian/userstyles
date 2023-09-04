@@ -3,6 +3,7 @@
 @match       https://read.readwise.io/*
 @match       https://*.read.readwise.io/*
 ==/UserStyle== */
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap');
 @media all {
   :root {
     --iy-serif-font: "Roboto Slab", Georgia, Cambria, "Times New Roman", Times,

@@ -3,6 +3,7 @@
 @match       https://twitter.com/*
 @match       https://*.twitter.com/*
 ==/UserStyle== */
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap');
 @media all {
   :root {
     --iy-atki-font: "Atkinson Hyperlegible", Inter, system-ui,
