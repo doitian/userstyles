@@ -1,0 +1,7 @@
+/* ==UserStyle==
+@name        client.pushover.net
+@match       https://client.pushover.net/*
+==/UserStyle== */
+body.client {
+  font-size: 16px;
+}
