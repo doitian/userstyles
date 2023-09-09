@@ -15,7 +15,7 @@ remove_fonts() {
 insert_fonts() {
   echo "$1" | sed '/^@media all {$/,$d' | grep -v '@import.*fonts'
   if has_used "$1" '--iy-atki-font'; then
-    echo "@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap');"
+    echo "@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap');"
   fi
 
   echo '@media all {'
