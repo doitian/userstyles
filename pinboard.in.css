@@ -6,8 +6,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @media all {
   :root {
-    --iy-ui-font: system-ui, BlinkMacSystemFont, "Lato", Inter, "Segoe UI",
-      "Helvetica Neue", "Noto Sans", "Noto Sans CJK SC", sans-serif;
+    --iy-sans-font: "Greycliff CF", Inter, system-ui, BlinkMacSystemFont,
+      "Segoe UI", "Helvetica Neue", "Noto Sans", "Noto Sans CJK SC", sans-serif;
     --iy-atki-font: "Atkinson Hyperlegible", Inter, system-ui,
       BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "Noto Sans",
       "LXGW WenKai", "Noto Sans CJK SC", sans-serif;
@@ -31,7 +31,7 @@ body {
 }
 
 a.bookmark_title {
-  font-family: var(--iy-ui-font);
+  font-family: var(--iy-sans-font);
   font-size: 17px;
 }
 
