@@ -32,7 +32,7 @@ pre a {
 
 :root {
   --reading-font-title: var(--iy-serif-font);
-  --reading-font-body: var(--reading-editable-font-family), var(--iy-atki-font);
+  --reading-font-body: var(--iy-atki-font);
 }
 
 #document-header h1 {
