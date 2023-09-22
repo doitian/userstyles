@@ -1,0 +1,26 @@
+/* ==UserStyle==
+@name        calibre
+==/UserStyle== */
+@import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@media all {
+  :root {
+    --iy-serif-font: "Roboto Slab", Georgia, Cambria, "Times New Roman", Times,
+      "Noto Serif CJK SC", serif;
+    --iy-atki-font: "Atkinson Hyperlegible", Inter, system-ui,
+      BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "Noto Sans",
+      "LXGW WenKai", "Noto Sans CJK SC", sans-serif;
+  }
+}
+
+.calibre p {
+  line-height: 1.5;
+}
+
+body {
+  font-family: var(--iy-atki-font);
+}
+
+body h1,
+body h2 {
+  font-family: var(--iy-serif-font);
+}

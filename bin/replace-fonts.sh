@@ -60,7 +60,7 @@ UI_FONT="$(get_fonts '--iy-ui-font')"
 GREY_FONT="$(get_fonts '--iy-grey-font')"
 ATKI_FONT="$(get_fonts '--iy-atki-font')"
 
-for css in *.css; do
+for css in *.css apps/*.css; do
   TEMPLATE="$(remove_fonts "$css")"
   USED_FONTS="$(get_used_fonts "$TEMPLATE")"
   mv "$css" "$css.bak"
