@@ -3,8 +3,12 @@
 @match       https://github.com/*
 @match       https://*.github.com/*
 ==/UserStyle== */
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @media all {
   :root {
+    --iy-atki-font: "Atkinson Hyperlegible", Inter, system-ui,
+      BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "Noto Sans",
+      "LXGW WenKai", "Noto Sans CJK SC", sans-serif;
     --iy-code-font: "Cartograph CF", SFMono-Regular, Menlo, Monaco, Consolas,
       "Liberation Mono", "Courier New", "Noto Sans Mono CJK SC",
       "Noto Sans CJK SC", monospace, "Symbols Nerd Font Mono";
@@ -18,4 +22,9 @@ pre code,
 .cm-content,
 .blob-code-inner {
   font-family: var(--iy-code-font);
+}
+
+.comment-body {
+  font-family: var(--iy-atki-font);
+  font-size: 18px;
 }
