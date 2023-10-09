@@ -3,14 +3,14 @@
 @match       https://wikipedia.org/*
 @match       https://*.wikipedia.org/*
 ==/UserStyle== */
-@import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @media all {
   :root {
     --iy-serif-font: "Roboto Slab", Georgia, Cambria, "Times New Roman", Times,
-      "Noto Serif CJK SC", serif;
+      "Noto Serif CJK SC", "Noto Serif SC", serif;
     --iy-atki-font: "Atkinson Hyperlegible", Inter, system-ui,
       BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "Noto Sans",
-      "LXGW WenKai", "Noto Sans CJK SC", sans-serif;
+      "LXGW WenKai", "Noto Sans CJK SC", "Noto Sans SC", sans-serif;
   }
 }
 

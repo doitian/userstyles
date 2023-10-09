@@ -7,10 +7,11 @@
 @media all {
   :root {
     --iy-sans-font: "Greycliff CF", Inter, system-ui, BlinkMacSystemFont,
-      "Segoe UI", "Helvetica Neue", "Noto Sans", "Noto Sans CJK SC", sans-serif;
+      "Segoe UI", "Helvetica Neue", "Noto Sans", "Noto Sans CJK SC",
+      "Noto Sans SC", sans-serif;
     --iy-code-font: "Cartograph CF", SFMono-Regular, Menlo, Monaco, Consolas,
       "Liberation Mono", "Courier New", "Noto Sans Mono CJK SC",
-      "Noto Sans CJK SC", monospace, "Symbols Nerd Font Mono";
+      "Noto Sans CJK SC", "Noto Sans SC", monospace, "Symbols Nerd Font Mono";
   }
 
   pre,

@@ -8,7 +8,7 @@
   :root {
     --iy-atki-font: "Atkinson Hyperlegible", Inter, system-ui,
       BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "Noto Sans",
-      "LXGW WenKai", "Noto Sans CJK SC", sans-serif;
+      "LXGW WenKai", "Noto Sans CJK SC", "Noto Sans SC", sans-serif;
   }
 }
 

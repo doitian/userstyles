@@ -2,22 +2,24 @@
   :root {
     --iy-mono-font: "JetBrains Mono", SFMono-Regular, Menlo, Monaco, Consolas,
       "Liberation Mono", "Courier New", "Noto Sans Mono CJK SC",
-      "Noto Sans CJK SC", monospace, "Symbols Nerd Font Mono";
+      "Noto Sans CJK SC", "Noto Sans SC", monospace, "Symbols Nerd Font Mono";
     --iy-code-font: "Cartograph CF", SFMono-Regular, Menlo, Monaco, Consolas,
       "Liberation Mono", "Courier New", "Noto Sans Mono CJK SC",
-      "Noto Sans CJK SC", monospace, "Symbols Nerd Font Mono";
+      "Noto Sans CJK SC", "Noto Sans SC", monospace, "Symbols Nerd Font Mono";
     --iy-serif-font: "Roboto Slab", Georgia, Cambria, "Times New Roman", Times,
-      "Noto Serif CJK SC", serif;
+      "Noto Serif CJK SC", "Noto Serif SC", serif;
     --iy-ui-font: system-ui, BlinkMacSystemFont, "Lato", Inter, "Segoe UI",
-      "Helvetica Neue", "Noto Sans", "Noto Sans CJK SC", sans-serif;
+      "Helvetica Neue", "Noto Sans", "Noto Sans CJK SC", "Noto Sans SC",
+      sans-serif;
     --iy-sans-font: "Greycliff CF", Inter, system-ui, BlinkMacSystemFont,
-      "Segoe UI", "Helvetica Neue", "Noto Sans", "Noto Sans CJK SC", sans-serif;
+      "Segoe UI", "Helvetica Neue", "Noto Sans", "Noto Sans CJK SC",
+      "Noto Sans SC", sans-serif;
     --iy-grey-font: "Greycliff CF", Inter, system-ui, BlinkMacSystemFont,
       "Segoe UI", "Helvetica Neue", "Noto Sans", "LXGW WenKai",
-      "Noto Sans CJK SC", sans-serif;
+      "Noto Sans CJK SC", "Noto Sans SC", sans-serif;
     --iy-atki-font: "Atkinson Hyperlegible", Inter, system-ui,
       BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "Noto Sans",
-      "LXGW WenKai", "Noto Sans CJK SC", sans-serif;
+      "LXGW WenKai", "Noto Sans CJK SC", "Noto Sans SC", sans-serif;
   }
 }
 

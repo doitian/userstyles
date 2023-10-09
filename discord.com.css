@@ -6,13 +6,13 @@
 @media all {
   :root {
     --iy-serif-font: "Roboto Slab", Georgia, Cambria, "Times New Roman", Times,
-      "Noto Serif CJK SC", serif;
+      "Noto Serif CJK SC", "Noto Serif SC", serif;
     --iy-mono-font: "JetBrains Mono", SFMono-Regular, Menlo, Monaco, Consolas,
       "Liberation Mono", "Courier New", "Noto Sans Mono CJK SC",
-      "Noto Sans CJK SC", monospace, "Symbols Nerd Font Mono";
+      "Noto Sans CJK SC", "Noto Sans SC", monospace, "Symbols Nerd Font Mono";
     --iy-code-font: "Cartograph CF", SFMono-Regular, Menlo, Monaco, Consolas,
       "Liberation Mono", "Courier New", "Noto Sans Mono CJK SC",
-      "Noto Sans CJK SC", monospace, "Symbols Nerd Font Mono";
+      "Noto Sans CJK SC", "Noto Sans SC", monospace, "Symbols Nerd Font Mono";
   }
 
   pre,
