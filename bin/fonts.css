@@ -1,26 +1,23 @@
 @media all {
   :root {
     --iy-mono-font: "JetBrains Mono", SFMono-Regular, Menlo, Monaco, Consolas,
-      "Liberation Mono", "Courier New", "Noto Sans Mono CJK SC",
-      "Noto Sans CJK SC", "Noto Sans SC", monospace, "Symbols Nerd Font Mono";
+      "Liberation Mono", "Courier New", "MiSans VF", monospace,
+      "Symbols Nerd Font Mono";
     --iy-code-font: "Cartograph CF", SFMono-Regular, Menlo, Monaco, Consolas,
-      "Liberation Mono", "Courier New", "Noto Sans Mono CJK SC",
-      "Noto Sans CJK SC", "Noto Sans SC", monospace, "Symbols Nerd Font Mono";
+      "Liberation Mono", "Courier New", "MiSans VF", monospace,
+      "Symbols Nerd Font Mono";
     --iy-serif-font: "Roboto Slab", Georgia, Cambria, "Times New Roman", Times,
       "Noto Serif CJK SC", "Noto Serif SC", serif;
     --iy-ui-font: system-ui, BlinkMacSystemFont, "Lato", Inter, "Segoe UI",
-      "Helvetica Neue", "Noto Sans", "Noto Sans CJK SC", "Noto Sans SC",
-      sans-serif;
+      "Helvetica Neue", "MiSans VF", sans-serif;
     --iy-sans-font: "Greycliff CF", Inter, system-ui, BlinkMacSystemFont,
-      "Segoe UI", "Helvetica Neue", "Noto Sans", "Noto Sans CJK SC",
-      "Noto Sans SC", sans-serif;
+      "Segoe UI", "Helvetica Neue", "MiSans VF", sans-serif;
     --iy-grey-font: "Greycliff CF", Inter, system-ui, BlinkMacSystemFont,
-      "Segoe UI", "Helvetica Neue", "Noto Sans", "LXGW WenKai",
-      "Noto Sans CJK SC", "Noto Sans SC", sans-serif;
+      "Segoe UI", "Helvetica Neue", "LXGW WenKai", "MiSans VF", sans-serif;
     --iy-atki-font: "Atkinson Hyperlegible", Inter, system-ui,
-      BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "Noto Sans",
-      "LXGW WenKai", "Noto Sans CJK SC", "Noto Sans SC", sans-serif;
+      BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "LXGW WenKai",
+      "MiSans VF", sans-serif;
   }
 }
 
-/*Atkinson Hyperlegible,Cartograph CF,Greycliff CF,Inter,JetBrains Mono,LXGW WenKai,Lato,Noto Sans CJK SC,Noto Serif CJK SC,Roboto Slab*/
+/*Atkinson Hyperlegible,Cartograph CF,Greycliff CF,Inter,JetBrains Mono,LXGW WenKai,Lato,MiSans VF,Noto Serif CJK SC,Roboto Slab*/

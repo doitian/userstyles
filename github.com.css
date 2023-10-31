@@ -3,15 +3,15 @@
 @match       https://github.com/*
 @match       https://*.github.com/*
 ==/UserStyle== */
-@import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @media all {
   :root {
     --iy-atki-font: "Atkinson Hyperlegible", Inter, system-ui,
-      BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "Noto Sans",
-      "LXGW WenKai", "Noto Sans CJK SC", "Noto Sans SC", sans-serif;
+      BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "LXGW WenKai",
+      "MiSans VF", sans-serif;
     --iy-code-font: "Cartograph CF", SFMono-Regular, Menlo, Monaco, Consolas,
-      "Liberation Mono", "Courier New", "Noto Sans Mono CJK SC",
-      "Noto Sans CJK SC", "Noto Sans SC", monospace, "Symbols Nerd Font Mono";
+      "Liberation Mono", "Courier New", "MiSans VF", monospace,
+      "Symbols Nerd Font Mono";
   }
 }
 
