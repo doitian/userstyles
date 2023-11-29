@@ -16,7 +16,11 @@
   line-height: 1.5;
 }
 
-body {
+body,
+body p,
+body div p,
+body > *,
+body > div > * {
   font-family: var(--iy-atki-font);
 }
 
