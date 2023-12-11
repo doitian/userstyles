@@ -173,9 +173,13 @@ table {
   padding-left: 30px;
 }
 
-.athing .title a:link,
-.athing .title a:visited {
+.athing .title a:link {
   color: rgba(0, 0, 0, 0.9);
+  font-size: 18px;
+}
+
+.athing .title a:visited {
+  color: rgba(128, 128, 128, 0.9);
   font-size: 18px;
 }
 
