@@ -1,0 +1,39 @@
+/* ==UserStyle==
+@name        miniflux
+==/UserStyle== */
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@media all {
+  :root {
+    --iy-serif-font: "Roboto Slab", Georgia, Cambria, "Times New Roman", Times,
+      "Noto Serif CJK SC", "Noto Serif SC", serif;
+    --iy-atki-font: "Atkinson Hyperlegible", Inter, system-ui,
+      BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "LXGW WenKai",
+      "MiSans VF", sans-serif;
+  }
+}
+
+@media (max-width: 600px) {
+  main {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+}
+
+:root {
+  --entry-content-font-family: var(--iy-atki-font);
+  --entry-content-font-weight: 500;
+}
+
+.entry header h1,
+.entry-content h1,
+.entry-content h2 {
+  font-family: var(--iy-serif-font);
+}
+
+.entry-content h2 {
+  margin-top: 1em;
+}
+
+.entry-content {
+  line-height: 1.6em;
+}
