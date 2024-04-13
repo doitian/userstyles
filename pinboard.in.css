@@ -7,10 +7,10 @@
 @media all {
   :root {
     --iy-sans-font: "Greycliff CF", Inter, system-ui, BlinkMacSystemFont,
-      "Segoe UI", "Helvetica Neue", "MiSans VF", sans-serif;
+      "Segoe UI", "Helvetica Neue", "Sarasa UI SC", "MiSans VF", sans-serif;
     --iy-atki-font: "Atkinson Hyperlegible", Inter, system-ui,
       BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "LXGW WenKai",
-      "MiSans VF", sans-serif;
+      "Sarasa UI SC", "MiSans VF", sans-serif;
   }
 }
 

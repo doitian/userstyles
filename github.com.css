@@ -8,9 +8,9 @@
   :root {
     --iy-atki-font: "Atkinson Hyperlegible", Inter, system-ui,
       BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "LXGW WenKai",
-      "MiSans VF", sans-serif;
+      "Sarasa UI SC", "MiSans VF", sans-serif;
     --iy-code-font: "Cartograph CF", SFMono-Regular, Menlo, Monaco, Consolas,
-      "Liberation Mono", "Courier New", "MiSans VF", monospace,
+      "Liberation Mono", "Courier New", "Sarasa UI SC", "MiSans VF", monospace,
       "Symbols Nerd Font Mono";
   }
 }

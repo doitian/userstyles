@@ -21,7 +21,7 @@ def get_fonts(pattern):
             break
     if end_index is None:
         return ""
-    return "".join(lines[start_index : end_index + 1])
+    return "".join(lines[start_index : end_index + 1]).rstrip()
 
 
 def remove_fonts(css_file):
@@ -56,13 +56,13 @@ def insert_fonts(template, used_fonts):
         if not (line.startswith("@import") and "fonts" in line)
     )
     if "--iy-atki-font" in template:
-        result.insert(
-            0,
+        result.append(
             '@import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap");',
         )
+    result.append("@media all {")
     result.append("  :root {")
     result.append(used_fonts)
-    result.extend(lines[root_index + 1 :])
+    result.extend(lines[root_index + 2 :])
 
     return "\n".join(result)
 
@@ -105,8 +105,6 @@ css_files.extend(
 
 for css_file in css_files:
     template = remove_fonts(css_file)
-    print(template)
-    break
     used_fonts = get_used_fonts(template)
     backup_file = css_file + ".bak"
     os.rename(css_file, backup_file)
