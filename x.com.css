@@ -30,3 +30,7 @@ header[role="banner"] {
   font-size: 1.3rem;
   line-height: 1.95rem;
 }
+
+[data-testid="tweetText"] a > span {
+  font-size: 1.3rem;
+}
