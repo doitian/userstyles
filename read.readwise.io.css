@@ -15,19 +15,23 @@
       "Liberation Mono", "Courier New", "Sarasa UI SC", "MiSans VF", monospace,
       "Symbols Nerd Font Mono";
   }
-
-  pre,
-  pre code {
-    font-family: var(--iy-code-font);
-  }
 }
 
 pre {
   white-space: pre-wrap;
 }
 
-pre a {
+.theme--light pre {
+  background-color: rgba(40, 49, 59, 0.03);
+}
+.theme--light pre a {
   color: aquamarine;
+}
+
+.document-content pre,
+.document-content pre code,
+.document-content pre span {
+  font-family: var(--iy-code-font);
 }
 
 :root {
