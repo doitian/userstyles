@@ -21,11 +21,8 @@ pre {
   white-space: pre-wrap;
 }
 
-.theme--light pre {
-  background-color: rgba(40, 49, 59, 0.03);
-}
 .theme--light pre a {
-  color: aquamarine;
+  color: rgb(174, 200, 241);
 }
 
 .document-content pre,
