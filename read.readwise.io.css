@@ -25,6 +25,7 @@ pre {
 
 .theme--light pre {
   background-color: rgb(248, 249, 250);
+  color: var(--text-primary);
 }
 
 .document-content pre,
