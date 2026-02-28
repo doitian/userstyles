@@ -23,15 +23,6 @@ pre {
   white-space: pre-wrap;
 }
 
-.theme--light pre {
-  background-color: rgb(248, 249, 250);
-}
-.theme--light pre,
-.theme--light pre code,
-.theme--light pre span {
-  --reading-text-primary-inverse: var(--text-primary);
-}
-
 .document-content pre,
 .document-content pre code,
 .document-content pre span {
