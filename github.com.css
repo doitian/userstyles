@@ -24,7 +24,8 @@ pre code,
   font-family: var(--iy-code-font);
 }
 
-.comment-body {
+
+.markdown-body {
   font-family: var(--iy-atki-font);
-  font-size: 16px;
+  font-size: 1.1rem;
 }
