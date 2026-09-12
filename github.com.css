@@ -20,7 +20,7 @@ pre code,
 .react-code-text,
 .react-blob-print-hide,
 .cm-content,
-.blob-code-inner {
+body .blob-code-inner {
   font-family: var(--iy-code-font);
 }
 
