@@ -3,13 +3,32 @@
 import os
 import json
 import glob
-from datetime import datetime
+import subprocess
+from datetime import datetime, timezone
+
+
+def modified_time(css_file):
+    # File mtimes are reset on checkout, so prefer the last commit time.
+    try:
+        committed = subprocess.run(
+            ["git", "log", "-1", "--format=%cI", "--", css_file],
+            capture_output=True,
+            text=True,
+            check=True,
+        ).stdout.strip()
+    except (OSError, subprocess.CalledProcessError):
+        committed = ""
+    if committed:
+        modified = datetime.fromisoformat(committed)
+    else:
+        modified = datetime.fromtimestamp(os.path.getmtime(css_file), timezone.utc)
+    # Stylebot timestamps use the format yyyy-MM-dd'T'HH:mm:ss.SSSxxx
+    return modified.isoformat(timespec="milliseconds")
 
 
 def yield_files():
-    for css_file in glob.glob("*.css"):
+    for css_file in sorted(glob.glob("*.css")):
         name = css_file[:-4]
-        modified = datetime.fromtimestamp(os.path.getmtime(css_file)).isoformat()
         with open(css_file, "r") as file:
             css_content = file.read()
         css_content = css_content.replace(" !important;", ";")
@@ -23,7 +42,7 @@ def yield_files():
             {
                 "css": css_content,
                 "enabled": True,
-                "modifiedTime": modified,
+                "modifiedTime": modified_time(css_file),
                 "readability": False,
             },
         )

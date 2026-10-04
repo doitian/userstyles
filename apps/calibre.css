@@ -1,30 +1,39 @@
 /* ==UserStyle==
 @name        calibre
 ==/UserStyle== */
-@import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&display=swap");
 @media all {
   :root {
     --iy-serif-font: "Roboto Slab", Georgia, Cambria, "Times New Roman", Times,
       "Noto Serif CJK SC", "Noto Serif SC", serif;
-    --iy-atki-font: "Atkinson Hyperlegible", Inter, system-ui,
+    --iy-atki-font: "Atkinson Hyperlegible Next", Inter, system-ui,
       BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "LXGW WenKai",
       "Sarasa UI SC", "MiSans VF", sans-serif;
+    --iy-code-font: "Cartograph CF", SFMono-Regular, Menlo, Monaco, Consolas,
+      "Liberation Mono", "Courier New", "Sarasa UI SC", "MiSans VF", monospace,
+      "Symbols Nerd Font Mono";
   }
 }
 
-.calibre p {
-  line-height: 1.5;
-}
-
+/* Book CSS uses class selectors, so these need !important to win */
 body,
-body p,
-body div p,
-body > *,
-body > div > * {
-  font-family: var(--iy-atki-font);
+body :is(p, li, dd, dt, blockquote, td, th, figcaption) {
+  font-family: var(--iy-atki-font) !important;
 }
 
-body h1,
-body h2 {
-  font-family: var(--iy-serif-font);
+body :is(p, li, dd, blockquote) {
+  line-height: 1.6 !important;
+}
+
+body :is(h1, h2) {
+  font-family: var(--iy-serif-font) !important;
+  line-height: 1.25 !important;
+}
+
+body :is(pre, code, kbd, samp, tt) {
+  font-family: var(--iy-code-font) !important;
+}
+
+body pre {
+  white-space: pre-wrap !important;
 }

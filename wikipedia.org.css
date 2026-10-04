@@ -3,12 +3,12 @@
 @match       https://wikipedia.org/*
 @match       https://*.wikipedia.org/*
 ==/UserStyle== */
-@import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&display=swap");
 @media all {
   :root {
     --iy-serif-font: "Roboto Slab", Georgia, Cambria, "Times New Roman", Times,
       "Noto Serif CJK SC", "Noto Serif SC", serif;
-    --iy-atki-font: "Atkinson Hyperlegible", Inter, system-ui,
+    --iy-atki-font: "Atkinson Hyperlegible Next", Inter, system-ui,
       BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "LXGW WenKai",
       "Sarasa UI SC", "MiSans VF", sans-serif;
   }
@@ -18,12 +18,13 @@ body {
   font-family: var(--iy-atki-font);
 }
 
-.mw-body-content {
-  font-size: 20px;
-  line-height: 32px;
+/* Scoped to desktop: Minerva (mobile) sizes paragraphs in rem */
+.skin-vector-2022 .mw-body-content {
+  font-size: 1.25rem;
+  line-height: 1.6;
 }
 
-h1,
-h2 {
+/* Vector deliberately uses sans-serif headings for Japanese and Korean */
+:is(h1, h2):not(:lang(ja), :lang(ko)) {
   font-family: var(--iy-serif-font);
 }

@@ -7,21 +7,23 @@
   :root {
     --iy-serif-font: "Roboto Slab", Georgia, Cambria, "Times New Roman", Times,
       "Noto Serif CJK SC", "Noto Serif SC", serif;
-    --iy-mono-font: "JetBrains Mono", SFMono-Regular, Menlo, Monaco, Consolas,
-      "Liberation Mono", "Courier New", "Sarasa UI SC", "MiSans VF", monospace,
-      "Symbols Nerd Font Mono";
     --iy-code-font: "Cartograph CF", SFMono-Regular, Menlo, Monaco, Consolas,
       "Liberation Mono", "Courier New", "Sarasa UI SC", "MiSans VF", monospace,
       "Symbols Nerd Font Mono";
-  }
-
-  pre,
-  pre code {
-    font-family: var(--iy-code-font);
   }
 }
 
 :root {
   --font-headline: var(--iy-serif-font);
-  --font-code: var(--iy-mono-font);
+  --font-code: var(--iy-code-font);
+  --chat-markup-line-height: 1.5rem;
+}
+
+/* Real headings use --font-primary; --font-headline only reaches promo text */
+[class*="markup_"] :is(h1, h2, h3) {
+  font-family: var(--iy-serif-font);
+}
+
+[class*="markup_"] pre code {
+  line-height: 1.5;
 }

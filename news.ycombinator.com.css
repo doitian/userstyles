@@ -19,16 +19,8 @@
   }
 }
 
-body,
-td,
-table,
-input,
-textarea,
-.pagetop,
 * {
   font-family: var(--iy-sans-font);
-  font-weight: 400;
-  -webkit-font-smoothing: antialiased;
 }
 
 body {
@@ -38,10 +30,10 @@ body {
 
 .pagetop,
 .pagetop a {
-  color: rgba(0, 0, 0, 0.5);
+  color: #595959;
 }
 
-.brandname {
+.hnname {
   display: none;
 }
 
@@ -50,8 +42,13 @@ table {
 }
 
 #hnmain {
-  width: 800px;
+  width: min(800px, 100%);
+  min-width: 0;
   background: transparent;
+}
+
+#hnmain table {
+  width: 100%;
 }
 
 #hnmain > tbody > tr:last-child img {
@@ -67,11 +64,7 @@ table {
 }
 
 #hnmain > tbody > tr > td[bgcolor] > table {
-  padding: 0 0 20px 0 !important;
-}
-
-#hnmain > tbody > tr > td[bgcolor] > table > tbody > tr > td {
-  font-weight: 400;
+  padding: 0 0 20px 0;
 }
 
 #hnmain > tbody > tr > td[bgcolor] > table tbody tr td:first-child a {
@@ -93,6 +86,7 @@ table {
   display: none;
 }
 
+/* Same color as the page background, which hides the "|" separators */
 #hnmain > tbody > tr > td[bgcolor] > table tbody tr td:nth-child(2) .pagetop {
   color: #fafafa;
   padding-left: 10px;
@@ -121,10 +115,6 @@ table {
   position: relative;
 }
 
-.itemlist {
-  width: 100%;
-}
-
 .votelinks a {
   display: block;
   position: relative;
@@ -149,15 +139,11 @@ table {
   line-height: 13px;
   border-radius: 100%;
   font-size: 8px;
-  -webkit-transition: all 0.15s;
+  transition: all 0.15s;
 }
 
 .votearrow:hover:after {
-  -webkit-transform: scale(1.3);
-}
-
-.athing + tr .subtext {
-  position: relative;
+  transform: scale(1.3);
 }
 
 .athing + tr .subtext {
@@ -165,7 +151,7 @@ table {
   padding-bottom: 16px;
 }
 
-.athing td {
+.athing:not(.comtr) > td {
   padding: 16px 0 10px;
 }
 
@@ -179,7 +165,7 @@ table {
 }
 
 .athing .title a:visited {
-  color: rgba(128, 128, 128, 0.9);
+  color: #6b6b6b;
   font-size: 18px;
 }
 
@@ -199,17 +185,18 @@ table {
   left: 0;
 }
 
+.athing .title .rank:empty {
+  display: none;
+}
+
 .athing .title .comhead {
   display: none;
 }
 
-.subtext {
-  color: rgba(0, 0, 0, 0.5);
-}
-
+.subtext,
 .subtext a:link,
 .subtext a:visited {
-  color: rgba(0, 0, 0, 0.5) !important;
+  color: #595959;
 }
 
 .subtext a:hover {
@@ -218,19 +205,56 @@ table {
   padding-bottom: 2px;
 }
 
-.comment-tree .default .comhead {
-  font-size: 14px !important;
-  color: rgba(0, 0, 0, 0.5);
+.comment-tree .default .comhead,
+.comment-tree .comhead a:link,
+.comment-tree .comhead a:visited {
+  font-size: 14px;
+  color: #595959;
 }
 
 .comment-tree .comment {
-  font-size: 14px !important;
-  color: rgba(0, 0, 0, 0.5);
-  line-height: 1.42em;
+  font-size: 16px;
+  line-height: 1.6;
 }
 
-#hnmain table {
-  width: 100%;
+.comment-tree .commtext {
+  max-width: 70ch;
+}
+
+.commtext p {
+  margin-top: 0.75em;
+}
+
+tr.comtr td.default {
+  padding: 8px 0 12px;
+}
+
+/* HN indents with a 40px-per-level spacer image; halve it */
+td.ind {
+  width: calc(attr(indent type(<number>), 0) * 20px);
+}
+
+td.ind img {
+  display: none;
+}
+
+td.votelinks {
+  width: 0px;
+}
+
+td.title:has(> .morelink) {
+  padding: 10px 0;
+}
+
+.morelink {
+  border: solid 1px #f06d3c;
+  height: 32px;
+  line-height: 32px;
+  background: transparent;
+  border-radius: 32px;
+  padding: 0 12px;
+  color: #f06d3c;
+  display: inline-block;
 }
 
 #hnmain form textarea {
@@ -238,11 +262,9 @@ table {
   width: 100%;
   box-sizing: border-box;
   background: #fff;
-  border: 1px solid rgba(0, 0, 0, 0.05);
-  font-weight: 400;
+  border: 1px solid rgba(0, 0, 0, 0.25);
   font-size: 14px;
   padding: 10px;
-  outline: none;
 }
 
 #hnmain form input[type="submit"] {
@@ -255,36 +277,16 @@ table {
   cursor: pointer;
 }
 
-.itemlist tr:last-child .title {
-  padding: 10px 0;
-}
-
-.itemlist tr:last-child .title a {
-  border: solid 1px #f06d3c;
-  height: 32px;
-  line-height: 32px;
-  background: transparent;
-  border-radius: 32px;
-  padding: 0 12px;
-  color: #f06d3c;
-  display: inline-block;
-}
-
-td.ind {
-  width: 0px;
-}
-
-td.votelinks {
-  width: 0px;
-}
-
 input,
 select,
 textarea {
   background: #fff;
-  border: 1px solid rgba(0, 0, 0, 0.05);
-  font-weight: 400;
+  border: 1px solid rgba(0, 0, 0, 0.25);
   font-size: 14px;
   padding: 5px;
-  outline: none;
+}
+
+:focus-visible {
+  outline: 2px solid #f06d3c;
+  outline-offset: 2px;
 }

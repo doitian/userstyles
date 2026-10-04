@@ -9,13 +9,17 @@
       "Liberation Mono", "Courier New", "Sarasa UI SC", "MiSans VF", monospace,
       "Symbols Nerd Font Mono";
   }
-
-  pre,
-  pre code {
-    font-family: var(--iy-code-font);
-  }
 }
 
 :root {
   --monoFont: var(--iy-code-font);
+}
+
+._content {
+  font-size: 1rem;
+}
+
+/* code and pre both shrink to .9em, compounding inside pre */
+pre code {
+  font-size: inherit;
 }

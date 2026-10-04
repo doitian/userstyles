@@ -3,10 +3,10 @@
 @match       https://github.com/*
 @match       https://*.github.com/*
 ==/UserStyle== */
-@import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&display=swap");
 @media all {
   :root {
-    --iy-atki-font: "Atkinson Hyperlegible", Inter, system-ui,
+    --iy-atki-font: "Atkinson Hyperlegible Next", Inter, system-ui,
       BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "LXGW WenKai",
       "Sarasa UI SC", "MiSans VF", sans-serif;
     --iy-code-font: "Cartograph CF", SFMono-Regular, Menlo, Monaco, Consolas,
@@ -15,12 +15,12 @@
   }
 }
 
-pre,
-pre code,
-.react-code-text,
-.react-blob-print-hide,
-.cm-content,
-body .blob-code-inner {
+/* Primer uses this for all code, including the hidden selection textarea */
+:root {
+  --fontStack-monospace: var(--iy-code-font);
+}
+
+.cm-content {
   font-family: var(--iy-code-font);
 }
 

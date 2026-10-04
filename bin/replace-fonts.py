@@ -31,15 +31,15 @@ def remove_fonts(css_file):
         skip_lines = False
         for line in lines:
             if line.lstrip().startswith("--") and "font:" in line:
-                skip_lines = True
-            elif skip_lines and line.strip().endswith(";"):
-                skip_lines = False
-            elif not skip_lines:
+                skip_lines = not line.strip().endswith(";")
+            elif skip_lines:
+                skip_lines = not line.strip().endswith(";")
+            else:
                 result.append(line)
         return "".join(result)
 
 
-def insert_fonts(template, used_fonts):
+def insert_fonts(css_file, template, used_fonts):
     lines = template.split("\n")
     root_index = None
     for i, line in enumerate(lines):
@@ -47,7 +47,14 @@ def insert_fonts(template, used_fonts):
             root_index = i
             break
     if root_index is None:
-        return template
+        header_end = next(
+            (i for i, line in enumerate(lines) if line.startswith("==/UserStyle==")),
+            None,
+        )
+        if header_end is None:
+            raise SystemExit(f"{css_file}: uses fonts but has no @media all block")
+        lines[header_end + 1 : header_end + 1] = ["@media all {", "  :root {", "  }", "}", ""]
+        root_index = header_end + 1
 
     result = []
     result.extend(
@@ -57,7 +64,7 @@ def insert_fonts(template, used_fonts):
     )
     if "--iy-atki-font" in template:
         result.append(
-            '@import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap");',
+            '@import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&display=swap");',
         )
     result.append("@media all {")
     result.append("  :root {")
@@ -110,7 +117,7 @@ for css_file in css_files:
     os.rename(css_file, backup_file)
     if used_fonts:
         with open(css_file, "w", newline="\n") as file:
-            file.write(insert_fonts(template, used_fonts))
+            file.write(insert_fonts(css_file, template, used_fonts))
     else:
         with open(css_file, "w", newline="\n") as file:
             file.write(template)

@@ -3,14 +3,14 @@
 @match       https://readwise.io/*
 @match       https://*.readwise.io/*
 ==/UserStyle== */
-@import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&display=swap");
 @media all {
   :root {
     --iy-sans-font: "Greycliff CF", Inter, system-ui, BlinkMacSystemFont,
       "Segoe UI", "Helvetica Neue", "Sarasa UI SC", "MiSans VF", sans-serif;
     --iy-serif-font: "Roboto Slab", Georgia, Cambria, "Times New Roman", Times,
       "Noto Serif CJK SC", "Noto Serif SC", serif;
-    --iy-atki-font: "Atkinson Hyperlegible", Inter, system-ui,
+    --iy-atki-font: "Atkinson Hyperlegible Next", Inter, system-ui,
       BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "LXGW WenKai",
       "Sarasa UI SC", "MiSans VF", sans-serif;
     --iy-code-font: "Cartograph CF", SFMono-Regular, Menlo, Monaco, Consolas,
@@ -33,6 +33,6 @@ h1.list-book-title {
   font-family: var(--iy-serif-font);
 }
 
-h1.list-book-author.mb-1 {
+h1.list-book-author {
   font-family: var(--iy-sans-font);
 }

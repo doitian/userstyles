@@ -3,15 +3,45 @@
 @match       https://hackmd.io/*
 @match       https://*.hackmd.io/*
 ==/UserStyle== */
-@import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&display=swap");
 @media all {
   :root {
-    --iy-atki-font: "Atkinson Hyperlegible", Inter, system-ui,
+    --iy-serif-font: "Roboto Slab", Georgia, Cambria, "Times New Roman", Times,
+      "Noto Serif CJK SC", "Noto Serif SC", serif;
+    --iy-atki-font: "Atkinson Hyperlegible Next", Inter, system-ui,
       BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "LXGW WenKai",
       "Sarasa UI SC", "MiSans VF", sans-serif;
+    --iy-code-font: "Cartograph CF", SFMono-Regular, Menlo, Monaco, Consolas,
+      "Liberation Mono", "Courier New", "Sarasa UI SC", "MiSans VF", monospace,
+      "Symbols Nerd Font Mono";
   }
 }
 
 .markdown-body {
   font-family: var(--iy-atki-font);
+  line-height: 1.6;
+}
+
+.markdown-body h1,
+.markdown-body h2 {
+  font-family: var(--iy-serif-font);
+}
+
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  font-family: var(--iy-atki-font);
+}
+
+.markdown-body pre,
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre[class*="language-"],
+.markdown-body code[class*="language-"] {
+  font-family: var(--iy-code-font);
+}
+
+.markdown-body pre {
+  line-height: 1.5;
 }

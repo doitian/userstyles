@@ -1,24 +1,19 @@
 /* ==UserStyle==
-@name        www.notion.so
-@match       https://www.notion.so/*
-@match       https://*.www.notion.so/*
+@name        app.notion.com
+@match       https://app.notion.com/*
+@match       https://*.notion.site/*
 ==/UserStyle== */
-@import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&display=swap");
 @media all {
   :root {
     --iy-serif-font: "Roboto Slab", Georgia, Cambria, "Times New Roman", Times,
       "Noto Serif CJK SC", "Noto Serif SC", serif;
-    --iy-atki-font: "Atkinson Hyperlegible", Inter, system-ui,
+    --iy-atki-font: "Atkinson Hyperlegible Next", Inter, system-ui,
       BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "LXGW WenKai",
       "Sarasa UI SC", "MiSans VF", sans-serif;
     --iy-code-font: "Cartograph CF", SFMono-Regular, Menlo, Monaco, Consolas,
       "Liberation Mono", "Courier New", "Sarasa UI SC", "MiSans VF", monospace,
       "Symbols Nerd Font Mono";
-  }
-
-  pre,
-  pre code {
-    font-family: var(--iy-code-font);
   }
 }
 
@@ -28,11 +23,15 @@
 }
 
 .notion-frame h1,
-.notion-frame h2 {
+.notion-frame h2,
+.notion-frame h3,
+.notion-frame h4 {
   font-family: var(--iy-serif-font);
   font-weight: 700;
 }
 
-.notion-code-block > div {
+/* Notion renders no pre/code; inline code is a span with an inline style */
+.notion-page-content span[style*="monospace"],
+.notion-code-block [data-content-editable-leaf] {
   font-family: var(--iy-code-font);
 }

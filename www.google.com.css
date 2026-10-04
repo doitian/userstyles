@@ -2,6 +2,10 @@
 @name        www.google.com
 @match       https://www.google.com/*
 ==/UserStyle== */
-[aria-label="Ads"] {
+#tads,
+#tvcap,
+#bottomads,
+.MjjYud:has([data-text-ad]),
+#rso > div > div:has([data-text-ad]) {
   display: none;
 }
