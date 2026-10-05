@@ -6,9 +6,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&display=swap");
 @media all {
   :root {
-    --iy-atki-font: "Atkinson Hyperlegible Next", Inter, system-ui,
-      BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "LXGW WenKai",
-      "Sarasa UI SC", "MiSans VF", sans-serif;
+    --iy-atki-font:
+      "Atkinson Hyperlegible Next", Inter, system-ui, BlinkMacSystemFont, "Segoe UI",
+      "Helvetica Neue", "LXGW WenKai", "Sarasa UI SC", "MiSans VF", sans-serif;
   }
 }
 
@@ -32,4 +32,8 @@ header[role="banner"]:is(:hover, :focus-within) {
   font-family: var(--iy-atki-font);
   font-size: 1.3rem;
   line-height: 1.5;
+}
+
+[aria-label="1 unread items"] {
+  display: none;
 }
