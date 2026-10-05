@@ -53,7 +53,13 @@ def insert_fonts(css_file, template, used_fonts):
         )
         if header_end is None:
             raise SystemExit(f"{css_file}: uses fonts but has no @media all block")
-        lines[header_end + 1 : header_end + 1] = ["@media all {", "  :root {", "  }", "}", ""]
+        lines[header_end + 1 : header_end + 1] = [
+            "@media all {",
+            "  :root {",
+            "  }",
+            "}",
+            "",
+        ]
         root_index = header_end + 1
 
     result = []
@@ -106,9 +112,6 @@ GREY_FONT = get_fonts("--iy-grey-font")
 ATKI_FONT = get_fonts("--iy-atki-font")
 
 css_files = [file for file in os.listdir() if file.endswith(".css")]
-css_files.extend(
-    [os.path.join("apps", file) for file in os.listdir("apps") if file.endswith(".css")]
-)
 
 for css_file in css_files:
     template = remove_fonts(css_file)
