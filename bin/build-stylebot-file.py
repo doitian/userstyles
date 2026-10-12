@@ -49,7 +49,12 @@ def yield_files():
 
 
 def main():
-    config = dict(yield_files())
+    config = {
+        "format": "stylebot-backup",
+        "version": 1,
+        "exportedAt": datetime.now(timezone.utc).isoformat(timespec="milliseconds"),
+        "styles": dict(yield_files()),
+    }
     output = json.dumps(config, indent=2)
     print(output)
 
