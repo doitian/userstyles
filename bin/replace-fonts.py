@@ -68,7 +68,7 @@ def insert_fonts(css_file, template, used_fonts):
         for line in lines[:root_index]
         if not (line.startswith("@import") and "fonts" in line)
     )
-    if "--iy-atki-font" in template:
+    if "--iy-sans-font" in template:
         result.append(
             '@import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&display=swap");',
         )
@@ -94,10 +94,6 @@ def get_used_fonts(template):
         used_fonts.append(MONO_FONT)
     if has_used(template, "--iy-ui-font"):
         used_fonts.append(UI_FONT)
-    if has_used(template, "--iy-grey-font"):
-        used_fonts.append(GREY_FONT)
-    if has_used(template, "--iy-atki-font"):
-        used_fonts.append(ATKI_FONT)
     if has_used(template, "--iy-code-font"):
         used_fonts.append(CODE_FONT)
     return "\n".join(used_fonts)
@@ -108,8 +104,6 @@ SERIF_FONT = get_fonts("--iy-serif-font")
 MONO_FONT = get_fonts("--iy-mono-font")
 CODE_FONT = get_fonts("--iy-code-font")
 UI_FONT = get_fonts("--iy-ui-font")
-GREY_FONT = get_fonts("--iy-grey-font")
-ATKI_FONT = get_fonts("--iy-atki-font")
 
 css_files = [file for file in os.listdir() if file.endswith(".css")]
 

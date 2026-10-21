@@ -4,13 +4,14 @@
 @match       https://*.news.ycombinator.com/*
 ==/UserStyle== */
 /* https://github.com/losuler/hacker-news-userstyle/blob/master/modern-hacker-news-light.user.css */
+@import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&display=swap");
 @media all {
   :root {
-    --iy-sans-font: "Greycliff CF", Inter, system-ui, BlinkMacSystemFont,
-      "Segoe UI", "Helvetica Neue", "Sarasa UI SC", "MiSans VF", sans-serif;
-    --iy-code-font: "Cartograph CF", SFMono-Regular, Menlo, Monaco, Consolas,
-      "Liberation Mono", "Courier New", "Sarasa UI SC", "MiSans VF", monospace,
-      "Symbols Nerd Font Mono";
+    --iy-sans-font: "Atkinson Hyperlegible Next", Inter, system-ui,
+      BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "Noto Sans CJK SC",
+      "Noto Sans SC", sans-serif;
+    --iy-code-font: "CartographCF Nerd Font", SFMono-Regular, Menlo, Monaco, Consolas,
+      "Liberation Mono", "Courier New", "Sarasa Mono SC", "Sarasa UI SC", monospace;
   }
 
   pre,

@@ -6,16 +6,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&display=swap");
 @media all {
   :root {
+    --iy-sans-font: "Atkinson Hyperlegible Next", Inter, system-ui,
+      BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "Noto Sans CJK SC",
+      "Noto Sans SC", sans-serif;
     --iy-serif-font: "Roboto Slab", Georgia, Cambria, "Times New Roman", Times,
       "Noto Serif CJK SC", "Noto Serif SC", serif;
-    --iy-atki-font: "Atkinson Hyperlegible Next", Inter, system-ui,
-      BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "LXGW WenKai",
-      "Sarasa UI SC", "MiSans VF", sans-serif;
   }
 }
 
 body {
-  font-family: var(--iy-atki-font);
+  font-family: var(--iy-sans-font);
 }
 
 /* Scoped to desktop: Minerva (mobile) sizes paragraphs in rem */

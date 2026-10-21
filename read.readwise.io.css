@@ -6,20 +6,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&display=swap");
 @media all {
   :root {
+    --iy-sans-font: "Atkinson Hyperlegible Next", Inter, system-ui,
+      BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "Noto Sans CJK SC",
+      "Noto Sans SC", sans-serif;
     --iy-serif-font: "Roboto Slab", Georgia, Cambria, "Times New Roman", Times,
       "Noto Serif CJK SC", "Noto Serif SC", serif;
-    --iy-atki-font: "Atkinson Hyperlegible Next", Inter, system-ui,
-      BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "LXGW WenKai",
-      "Sarasa UI SC", "MiSans VF", sans-serif;
-    --iy-code-font: "Cartograph CF", SFMono-Regular, Menlo, Monaco, Consolas,
-      "Liberation Mono", "Courier New", "Sarasa UI SC", "MiSans VF", monospace,
-      "Symbols Nerd Font Mono";
+    --iy-code-font: "CartographCF Nerd Font", SFMono-Regular, Menlo, Monaco, Consolas,
+      "Liberation Mono", "Courier New", "Sarasa Mono SC", "Sarasa UI SC", monospace;
   }
 }
 
 :root {
   --reading-font-title: var(--iy-serif-font);
-  --reading-font-body: var(--iy-atki-font);
+  --reading-font-body: var(--iy-sans-font);
   --reading-font-monospace: var(--iy-code-font);
 }
 

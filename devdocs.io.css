@@ -5,9 +5,8 @@
 ==/UserStyle== */
 @media all {
   :root {
-    --iy-code-font: "Cartograph CF", SFMono-Regular, Menlo, Monaco, Consolas,
-      "Liberation Mono", "Courier New", "Sarasa UI SC", "MiSans VF", monospace,
-      "Symbols Nerd Font Mono";
+    --iy-code-font: "CartographCF Nerd Font", SFMono-Regular, Menlo, Monaco, Consolas,
+      "Liberation Mono", "Courier New", "Sarasa Mono SC", "Sarasa UI SC", monospace;
   }
 }
 
