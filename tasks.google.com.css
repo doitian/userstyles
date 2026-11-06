@@ -1,0 +1,22 @@
+/* ==UserStyle==
+@name        tasks.google.com
+@match       https://tasks.google.com/*
+==/UserStyle== */
+[data-task-id]:has([data-aria-label="Task title"][data-rendered-value*="#now" i]):not(:hover):not(:focus-within):not(:has([data-is-editing="true"])) {
+  background-color: rgba(52, 168, 83, 0.1);
+  border-radius: 8px;
+}
+
+[data-task-id]:has([data-aria-label="Task title"][data-rendered-value*="#later" i]):not(:has([data-is-editing="true"])) {
+  opacity: 0.4;
+  transition: opacity 0.15s;
+}
+
+[data-task-id]:has([data-aria-label="Task title"][data-rendered-value*="#someday" i]):not(:has([data-is-editing="true"])) {
+  opacity: 0.25;
+}
+
+[data-task-id]:has([data-aria-label="Task title"][data-rendered-value*="#later" i]):is(:hover, :focus-within),
+[data-task-id]:has([data-aria-label="Task title"][data-rendered-value*="#someday" i]):is(:hover, :focus-within) {
+  opacity: 1;
+}
